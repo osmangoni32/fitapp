@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+<<<<<<< HEAD
 
 import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 
+=======
+import App from "./components/App";
+import reportWebVitals from "./reportWebVitals";
+
+>>>>>>> pl4
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
