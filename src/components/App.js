@@ -1,13 +1,11 @@
+import "../styles/App.css";
+import Nav from "./Nav";
 function App() {
-<<<<<<< HEAD
-  return <div className="App">Learn React</div>;
-=======
   return (
     <div className="App">
-      <div> hello react</div>
+      <Nav />
     </div>
   );
->>>>>>> pl4
 }
 
 export default App;
