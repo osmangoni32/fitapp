@@ -1,5 +1,7 @@
 import classes from "../styles/Question.module.css";
 import Answers from "./Answers";
+import React from 'react';
+
 
 export default function Question() {
   return (

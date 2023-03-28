@@ -1,6 +1,7 @@
 import Answers from "../Answers";
 import MiniPlayer from "../MiniPlayer";
 import ProgressBar from "../ProgressBar";
+import React from "react";
 
 export default function quiz() {
   return (

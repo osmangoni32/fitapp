@@ -1,5 +1,7 @@
 import classes from "../styles/Summary.module.css";
-import image from "../assets/images/success.png"
+import image from "../assets/images/success.png";
+import React from 'react';
+
 
 export default function Summary() {
   return (

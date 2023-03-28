@@ -1,5 +1,6 @@
 import image from "../assets/images/3.jpg";
 import classes from "../styles/Video.module.css";
+import React from "react";
 export default function Video() {
   return (
     <a href="quiz.html">

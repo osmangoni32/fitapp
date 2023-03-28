@@ -1,9 +1,11 @@
+import React from "react";
 import classes from "../../styles/Signup.module.css";
 import Button from "../Button";
 import Checkbox from "../Checkbox";
 import Form from "../Form";
 import Illustration from "../Illustration";
 import Textinput from "../Textinput";
+
 export default function Signup() {
   return (
     <>
