@@ -38,14 +38,14 @@ export function AuthProvider(children) {
     });
     
     const user=auth.currentUser;
-    setCurrentUser{
+    setCurrentUser({
         ...user,
-    }
+    });
   }
   //login
-   function login(){
+   function login(email,password){
     const auth=getAuth();
-    return signInWithEmailAndPassword(auth,email,password)
+    return signInWithEmailAndPassword(auth, email, password)
 
    }
    
