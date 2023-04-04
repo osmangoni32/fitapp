@@ -8,6 +8,7 @@ import Quiz from "./pages/Quiz";
 import Result from "./pages/Result";
 import Singup from "./pages/Signup";
 
+
 function App() {
   return (
     <Router>
