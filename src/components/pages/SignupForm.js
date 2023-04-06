@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../Button";
 import Checkbox from "../Checkbox";
 import { useAuth } from "../Context/AuthContext";
@@ -80,7 +80,7 @@ export default function SignupForm() {
       </Button>
       {error && <p className="error"> {error}</p>}
       <div className="info">
-        Already have an account? <a href="login.html">Login</a> instead.
+        Already have an account? <Link to="/login">Login</Link> instead.
       </div>
     </Form>
   );
