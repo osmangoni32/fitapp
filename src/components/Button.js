@@ -1,10 +1,10 @@
 import classes from "../styles/Button.module.css";
 import React from 'react';
 
-export default function button({ classname, children }) {
+export default function button({ className, children, ...rest }) {
   return (
-    <div className={`${classes.button} ${classname}`}>
+    <button className={`${classes.button} ${className}`} {...rest}>
        {children}
-    </div>
+    </button>
   );
 }
