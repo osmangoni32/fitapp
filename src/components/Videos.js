@@ -8,21 +8,7 @@ export default function Videos() {
       <Link to="/Quiz">
         <Video />
       </Link>
-      <Link to="/Quiz">
-        <Video />
-      </Link>
-      <Link to="/Quiz">
-        <Video />
-      </Link>
-      <Link to="/Quiz">
-        <Video />
-      </Link>
-      <Link to="/Quiz">
-        <Video />
-      </Link>
-      <Link to="/Quiz">
-        <Video />
-      </Link>
+      
     </div>
   );
 }
