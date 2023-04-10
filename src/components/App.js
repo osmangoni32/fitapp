@@ -27,10 +27,10 @@ function App() {
               <Route path="/login" element={<Login />} />
             </Route>
             <Route path="/quiz" element={<PrivateOutlet />}>
-              <Route path="/quiz" element={<Quiz />} />
+              <Route path="/quiz/:id" element={<Quiz />} />
             </Route>
             <Route path="/result" element={<PrivateOutlet />}>
-              <Route path="/result" element={<Result />} />
+              <Route path="/result/:id" element={<Result />} />
             </Route>
 
             {/*  <Route path="/quiz" element={<Quiz />} /> */}
