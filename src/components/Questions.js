@@ -3,14 +3,14 @@ import Answers from "./Answers";
 import React from 'react';
 
 
-export default function Question() {
-  return (
-    <div className={classes.question}>
+export default function Question({ answers = [] }) {
+  return answers.map((answer, index) => (
+    <div className={classes.question} key={index}>
       <div className={classes.qtitle}>
         <span className="material-icons-outlined"> help_outline </span>
-        Here goes the question from Learn with Sumit?
+        {answer.title}
       </div>
-      <Answers />
+      <Answers input={false} options={answer.options} />
     </div>
-  );
+  ));
 }

@@ -1,11 +1,10 @@
-import React from "react";
 import { getDatabase, ref, set } from "firebase/database";
 import _ from "lodash";
-import { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { useAuth } from "../Context/AuthContext";
 import useQuestions from "../../hooks/useQuestions";
 import Answers from "../Answers";
+import { useAuth } from "../Context/AuthContext";
 import MiniPlayer from "../MiniPlayer";
 import ProgressBar from "../ProgressBar";
 
@@ -33,6 +32,7 @@ const reducer = (state, action) => {
 
 export default function Quiz() {
   const { id } = useParams();
+  //console.log(id);
   const { loading, error, questions } = useQuestions(id);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -102,6 +102,7 @@ export default function Quiz() {
           <h1>{qna[currentQuestion].title}</h1>
           <h4>Question can have multiple answers</h4>
           <Answers
+            input
             options={qna[currentQuestion].options}
             handleChange={handleAnswerChange}
           />
@@ -111,7 +112,7 @@ export default function Quiz() {
             submit={submit}
             progress={percentage}
           />
-          <MiniPlayer />
+          <MiniPlayer id={id} title={qna[currentQuestion].title}/>
         </>
       )}
     </>
