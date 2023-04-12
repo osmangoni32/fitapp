@@ -1,14 +1,14 @@
-import classes from "../styles/Summary.module.css";
+import React from "react";
 import image from "../assets/images/success.png";
-import React from 'react';
+import classes from "../styles/Summary.module.css";
 
-
-export default function Summary({score ,noq}) {
+export default function Summary({ score, noq }) {
   return (
     <div className={classes.summary}>
       <div className={classes.point}>
         <p className={classes.score}>
-          Your score is <br />{score}out of {noq*5}
+          Your score is <br />
+          {score} out of {noq * 5}
         </p>
       </div>
 
