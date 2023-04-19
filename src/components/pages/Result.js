@@ -9,8 +9,11 @@ export default function Result() {
   const params = useParams();
   const location = useLocation();
   const { id } = params;
-  const { state } = location;
-  const { qna } = state;
+  console.log(id);
+  //const { state } = location;
+  const qna  = location.state && location.state.qna;
+  console.log("kj");
+  console.log(qna);
   const { loading, error, answers } = useAnswers(id);
   console.log(answers);
 
